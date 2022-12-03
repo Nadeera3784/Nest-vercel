@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { AxiomService } from './axiom.service';
+import { LogtailService } from './logtail.service';
 
 @Module({
   imports: [],
   controllers: [AppController],
-  providers: [AppService, AxiomService],
+  providers: [AppService, LogtailService],
 })
 export class AppModule {}
