@@ -6,7 +6,7 @@ export class LogtailService {
   public client;
 
   constructor(){
-   this.client = new Logtail(process.env.LOGTAIL_TOKEN);
+   this.client = new Logtail('uoA3reuSyqyPxjHmxPdjnHq4');
   }
 
   async log(message: string, data: object){
